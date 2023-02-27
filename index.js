@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const start=async function(){await app.listen(3005,()=>console.log("Listening on 3001"));}()
 
 //testing pinging server
-app.get('/',(req,res)=>{res.send("<b>Hello there, i'm up and running.</b>")})
+app.get('/',(req,res)=>{res.send("<b>Hello there, i'm Veela, up and running.</b>")})
 
 app.post('/veela',function(req,res){
   const stop=["is","of","are","i","so","and","the","them"];const d=/\d/g;const char=/\W/g;let result=[];let found=[];let notfound=[];let values=req.body.value.split(' ');
